@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Thanks{% endblock %}
+
+{% block content %}
+
+    <head>
+      <title>Thank You</title>
+      <link href="../static/thankYou.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <h1 class="logo">Action Complete</h1>
+        </header>
+
+    <form method="POST", class = resetPage>
+        <p>The device has been recorded</p>
+        <input type="submit" value="Add Another">
+    </form>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <head>
+    <title>Device Addition</title>
+    <link href="../static/addDevice.css" rel="stylesheet">
+
+  </head>
+  <body>
+      <header>
+          <div class="container">
+          <h1 class="logo">Watts Water</h1>
+      </header>
+      <form method="POST", class = "addDevice">
+          <p>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text">
+          </p>
+          <p>
+              <label for="deviceID">Device ID</label>
+              <input id="deviceID" name="deviceID" type="text">
+          </p>
+          <p>
+              <label for="room">Room Number</label>
+              <input id="room" name="room" type="text">
+          </p>
+          <input type="submit" value="Add Device">
+      </form>
+    </body>
+{% endblock %}
